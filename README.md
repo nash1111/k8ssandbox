@@ -11,6 +11,10 @@ gcloud components install gke-gcloud-auth-plugin
 gcloud container clusters create [cluster-name]
 # get credentials
 gcloud container clusters get-credentials [cluster-name]
+# create pods
+kubectl apply -f [targetyamlfile]
+# delete pods
+kubectl delete -f [targetyamlfile]
 ```
 
 
