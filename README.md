@@ -15,6 +15,14 @@ gcloud container clusters get-credentials [cluster-name]
 kubectl apply -f [targetyamlfile]
 # delete pods
 kubectl delete -f [targetyamlfile]
+# exec commands
+kubectl exec [pod name] -- [command]
+# interactive execution
+kubectl exec -it [pod name] -- ash
+# file transfer(pod to local)
+kubectl [pod name]:[path] [local path]
+# file transfer(local to pod)
+kubectl [local path] [podname]:[path]
 ```
 
 
